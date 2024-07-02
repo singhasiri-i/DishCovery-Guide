@@ -32,7 +32,7 @@ function Nav() {
       { 
         key: cat.idCategory, 
         label: (
-          <Link to={`/category/${cat.strCategory}`} target='_blank'>{cat.strCategory}</Link>
+          <Link to={`/category/${cat.strCategory}`}>{cat.strCategory}</Link>
         )
       })
     })
