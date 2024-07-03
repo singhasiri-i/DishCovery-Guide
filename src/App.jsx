@@ -6,7 +6,7 @@ import DetailPage from './pages/detail'
 import CategoryPage from './pages/category'
 import Error from './pages/error'
 import Favorite from './pages/favorite'
-import create from 'zustand'
+
 
 function App() {
   
