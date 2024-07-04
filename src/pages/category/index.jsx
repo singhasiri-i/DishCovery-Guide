@@ -45,7 +45,7 @@ function CategoryPage() {
         { menusInCat.map((menuInCat) => (
           <li className='hover:shadow-[5px_5px_0px_0px_#00843C] hover:scale-105' key={ menuInCat.idMeal }>
             <Link to={`/detail/${menuInCat.idMeal}`} className='card'>
-              <div className="relative flex max-w-[25rem] xl:max-w-[18rem] md:max-w-[20rem] flex-col overflow-hidden rounded-xl hover:rounded-none bg-clip-border text-gray-700 shadow-md">
+              <div className="relative flex max-w-[25rem] xl:max-w-[18rem] md:max-w-[20rem] flex-col overflow-hidden rounded-xl hover:rounded-none bg-clip-border text-gray-700 shadow-md hover:shadow-none">
               <div className="cardHeader relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
                 <img
                   src={ menuInCat.strMealThumb }

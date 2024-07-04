@@ -25,7 +25,7 @@ const Favorite = () => {
         <ul className='searchResults grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 m-[10px] mt-[0px] p-[50px] justify-between align-stretch mb-[50px]'>
         { favorite.map((fav) => (
           <li className='hover:shadow-[5px_5px_0px_0px_#00843C] hover:scale-105' key={ fav.idMeal }>
-              <div className="relative flex max-w-[25rem] xl:max-w-[18rem] md:max-w-[20rem] flex-col overflow-hidden rounded-xl hover:rounded-none bg-clip-border text-gray-700 shadow-md">
+              <div className="relative flex max-w-[25rem] xl:max-w-[18rem] md:max-w-[20rem] flex-col overflow-hidden rounded-xl hover:rounded-none bg-clip-border text-gray-700 shadow-md hover:shadow-none">
               <div className="cardHeader relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
                 <img
                   src={ fav.strMealThumb }
