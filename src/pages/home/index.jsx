@@ -100,15 +100,15 @@ function Homepage() {
       <Nav />
       <div className='mainPage flex flex-col justify-center items-center background bg-[url("/images/homeBG.jpeg")] bg-cover bg-no-repeat bg-center w-full min-h-[550px] bg-black/60 bg-blend-overlay text-white'>
         <div className='aboutUS mt-[10px] m-[20px]'>
-          <div className='topic leading-tight text-[70px] font-bold text-center'>DishCovery Guide</div>
-          <div className='text-[30px] text-center'>Let your taste buds lead the way!</div>
+          <div className='topic leading-tight text-[55px] sm:text-[75px] font-bold text-center'>DishCovery Guide</div>
+          <div className='text-[25px] sm:text-[30px] text-center'>Let your taste buds lead the way!</div>
         </div>
         <form onSubmit={handleFormSubmit} className='searchForm flex w-[60%] h-[50px] m-[20px]'>
           <Input onChange={handleInputChange} value={ searchTerm } style={{ fontSize: '20px' }} className='rounded-r-[0px]' placeholder="find your favorite dish here..." allowClear />
           {contextHolder}<button type='submit' className='flex justify-center items-center p-[8px] w-[70px] h-[50px] bg-[#00843C] rounded-l-[0px] rounded-r-[6px] text-white'><SearchOutlined /></button>
         </form>
         <div className='randomMenu flex w-[70%] flex-col items-center justify-center'>
-          <div className='text-[30px] mb-[20px] text-center'>No idea ? Get our random menu</div>
+          <div className='text-[25px] sm:text-[30px] mb-[20px] text-center'>No idea ? Get our random menu</div>
           <button onClick={handleRandomClick} className='px-[30px] h-[50px] bg-[#00843C] rounded-[6px]'>RANDOM</button>
         </div>
       </div>
@@ -117,7 +117,7 @@ function Homepage() {
 {/* Element for searchResults */}
     {searchResults.length > 0 && (
     <>
-      <div className='flex'>
+      <div className='flex flex-col sm:flex-row'>
         <CategoryList onSelect={handleSelection} value={selection} />
         <span className='flex mt-[30px] ml-[60px] text-[#BFBFBF]'>{filteredData.length} Results for "{searchTerm}"</span>
       </div>

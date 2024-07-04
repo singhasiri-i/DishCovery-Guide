@@ -37,7 +37,8 @@ function CategoryPage() {
     <div className='categoryPage relative flex flex-col min-h-screen bg-[#F6F6F6]'>
         <Nav />
         <div className='flex items-center'>
-            <Link to={"/"} className='flex justify-center items-center w-[160px] h-[40px] mt-[30px] ml-[60px] rounded-[4px] bg-[#00843C] text-white'><ArrowLeftOutlined />&nbsp; BACK HOME</Link>
+            <Link to={"/"} className='flex sm:hidden justify-center items-center w-[80px] h-[40px] mt-[30px] ml-[60px] rounded-[4px] bg-[#00843C] text-white'><ArrowLeftOutlined /></Link>
+            <Link to={"/"} className='hidden sm:flex justify-center items-center w-[160px] h-[40px] mt-[30px] ml-[60px] rounded-[4px] bg-[#00843C] text-white'><ArrowLeftOutlined />&nbsp; BACK HOME</Link>
             <span className='flex mt-[30px] ml-[60px] text-[#BFBFBF]'>{menusInCat.length} Results for "{param.catName}"</span>
         </div>
 

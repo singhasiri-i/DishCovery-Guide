@@ -46,13 +46,13 @@ function Nav() {
   return (
     <div className='navBar bg-[#00843C] w-full h-[100px] flex justify-between items-center p-[50px] uppercase'>
         <div className='flex gap-[10px] sm:gap-[30px] items-center'>
-            <Link to={"/"} onClick={() => { window.location.reload() }}><img className='logo h-[80px] cursor-pointer' src="/images/logo.png" alt="logo" /></Link>
+            <Link to={"/"} ><img className='logo h-[80px] cursor-pointer' src="/images/logo.png" alt="logo" /></Link>
             <Dropdown menu={{items,}} trigger={['hover']} className='dropdownFoodCat flex text-white hover:bg-[#d4d4d477] rounded-[4px] p-[8px] cursor-pointer'>
-                <Link onClick={(e) => e.preventDefault()}>Food Category &nbsp; <DownOutlined /></Link>
+                <Link onClick={(e) => e.preventDefault()} className='text-xs sm:text-base'>Food Category &nbsp; <DownOutlined /></Link>
             </Dropdown>
         </div>
         <div className='navBtn flex gap-[10px] sm:gap-[30px] items-center'>
-          <Button onClick={ showDrawer } className='min-h-[43px] uppercase rounded-[4px] bg-white text-[#00843C]'>Subscribe</Button>
+          <Button onClick={ showDrawer } className='sm:min-h-[43px] uppercase rounded-[4px] bg-white text-[#00843C] '><span className='text-xs sm:text-base'>Subscribe</span></Button>
           <Drawer onClose={ hideDrawer } open={ open } title="Don't miss out, subscribe us now!">
             <Form layout='vertical' autoComplete='off' form={form} onFinish={() => { message.success('Thank you for your subscription! Please check your inbox.') }} onFinishFailed={() => { message.error('Submit failed!') }}>
               <Form.Item name="email" label="Email" rules={[{
@@ -72,7 +72,7 @@ function Nav() {
               </Form.Item>
             </Form>
           </Drawer>
-          <Tooltip title="See my favourite"><Link to={'/favorite'} className='heartBtn flex items-center p-[8px] uppercase text-[#f43f5e] scale-125'><span class="material-symbols-outlined heart-fill">favorite</span></Link></Tooltip>
+          <Tooltip title="See my favourite"><Link to={'/favorite'} className='heartBtn flex items-center p-[8px] uppercase text-[#f43f5e] sm:scale-125'><span class="material-symbols-outlined heart-fill">favorite</span></Link></Tooltip>
         </div>
     </div>
   )
