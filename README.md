@@ -4,7 +4,7 @@
 
 > **Description**: A website where you can find something to eat or cook and save for your favorite dish, enjoy!
 
->** Visit my website**: https://dish-covery-guide.vercel.app/
+> **Visit the website**: https://dish-covery-guide.vercel.app/
 
 > **Project preview**:
 
